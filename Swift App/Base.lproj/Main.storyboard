@@ -34,16 +34,34 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q53-vW-6GW"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ux-5d-TM0">
+                                <rect key="frame" x="141" y="224" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="esL-70-FUi">
+                                <rect key="frame" x="141" y="154" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="esL-70-FUi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1hq-BW-7Wb"/>
                             <constraint firstItem="QGg-7i-ejk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="JLc-xK-56b"/>
+                            <constraint firstItem="esL-70-FUi" firstAttribute="top" secondItem="wVt-Ey-4FL" secondAttribute="bottom" constant="33" id="L4S-DB-kBA"/>
                             <constraint firstItem="wVt-Ey-4FL" firstAttribute="top" secondItem="QGg-7i-ejk" secondAttribute="bottom" constant="30" id="YRh-RK-xbH"/>
                             <constraint firstItem="QGg-7i-ejk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="haf-zP-aZ8"/>
                             <constraint firstItem="wVt-Ey-4FL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qaW-zM-U1u"/>
+                            <constraint firstItem="0Ux-5d-TM0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wV6-bw-btm"/>
+                            <constraint firstItem="0Ux-5d-TM0" firstAttribute="top" secondItem="esL-70-FUi" secondAttribute="bottom" constant="40" id="wqi-oK-RSI"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="esL-70-FUi" id="jMg-p2-K4y"/>
+                        <outlet property="text2" destination="0Ux-5d-TM0" id="w1j-Hp-x9K"/>
                         <outlet property="theLabel" destination="QGg-7i-ejk" id="8d0-Xa-maP"/>
                     </connections>
                 </viewController>
